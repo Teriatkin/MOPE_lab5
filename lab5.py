@@ -222,3 +222,6 @@ if fisher_test():
     print("\t\tРівняння регресії адекватне стосовно оригіналу")
 else:
     print("\t\tРівняння регресії неадекватне стосовно оригіналу")
+    for i in range(len(matrix_x)):
+        for j in range(len(matrix_x[0])):
+            matrix_x[i][j] *= random() * 20 - 10
